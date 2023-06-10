@@ -1,40 +1,464 @@
--- my-ds.page: Welcome to doc-site
+-- import: uuc110.github.io/assets
+-- import: uuc110.github.io/lib as lib
+-- import: ayushsoni1010.github.io/ui-packages/header as navbar
+-- import: ayushsoni1010.github.io/ui-packages/base-layout as layout
+-- import: ayushsoni1010.github.io/ui-packages/social-buttons as social
+-- import: ayushsoni1010.github.io/ui-packages/base-text as text
+-- import: ayushsoni1010.github.io/ui-packages/footer as footer
+-- import: ayushsoni1010.github.io/ui-packages/hero-toast as github-toast
+-- import: ayushsoni1010.github.io/ui-packages/button as button
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- layout.base-layout:
+
+-- navbar.header:
+logo: $assets.files.images.logo.svg
+logoURL: /
+header-item1: Home
+header-item2: About
+header-item3: Blogs
+header-item4: Tweets
+header-item5: Experience
+header-item6: Contact
+header-item1-link: /fastn-project
+header-item2-link: /fastn-project/about
+header-item3-link: /fastn-project/blogs
+header-item4-link: /fastn-project/tweets
+header-item5-link: /fastn-project/experience
+header-item6-link: /fastn-project/contact
+cta-item1: Resume
+cta-item1-link: https://uuc110.github.io/resume
+cta-item2: Schedule a Meeting
+cta-item2-link: https://calendly.com/uuc110
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- lib.toast:
+title: Hello, I'm a Full Stack Developer based in India
+link: https://uuc110.github.io/github
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.row: 
+margin-top.px: 60
+spacing.fixed.px: 14
+
+-- ftd.column:
+spacing.fixed.px: 20
+
+-- lib.hero-ui-base-text-wrapper:
+firstTitle: I'm
+secondTitle: Ayush Soni,
+
+-- lib.hero-ui-base-text-wrapper:
+firstTitle: full stack
+secondTitle: developer
+
+-- lib.hero-ui-base-text-wrapper:
+firstTitle: and
+secondTitle: designer.
+
+-- ftd.text: I design and create functional and beautiful applications with passion and a focus on user experience and high quality.
+role: $lib.home-description-responsive-typography
+margin-top.px: 10
+width.fixed.px: 700
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- button.secondary: 
+title: Hire me
+link: mailto:uuc110.work@gmail.com
+
+-- button.primary: 
+title: Schedule a Meeting
+link: https://calendly.com/uuc110/
+isNewTab: true
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** Social buttons wrapper **********
+
+-- ftd.container:
+margin-top.px: 10
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- social.social-button-wrapper:
+link: https://linkedin.com/in/Sourabhk110
+image: $assets.files.images.linkedin.png
+
+-- social.social-button-wrapper:
+link: https://twitter.com/STG_Sourabh
+image: $assets.files.images.twitter.png
+  
+-- social.social-button-wrapper:
+link: https://github.com/uuc110
+image: $assets.files.images.github.png
+  
+-- social.social-button-wrapper:
+link: https://instagram.com/uuc110
+image: $assets.files.images.instagram.png
+
+-- social.social-button-wrapper:
+link: https://youtube.com/sourabhkushwah
+image: $assets.files.images.youtube.png
+  
+-- social.social-button-wrapper:
+link: mailto:uuc110@gmail.com
+image: $assets.files.images.mail.png
+  
+-- end: ftd.row
+
+-- end: ftd.container
+
+-- end: ftd.column
+
+-- ftd.image: 
+src: $assets.files.images.dog.png
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.column:
+margin-top.px: 120
+align-self: center
+align-content: center
+
+-- ftd.text: The full product development stack.
+role: $lib.hero-product-service-responsive-typography
+text-align: center
+
+-- ftd.text: From designing the interface to implementing your fully featured application - I can provide the full product design process from an idea to a finished hiqh quality app, polished with fantastic design and running on state of the art software.
+role: $lib.home-description-responsive-typography
+text-align: center
+margin-top.px: 10
+color: #53585e
+width.fixed.px: 900
+
+-- ftd.row: 
+spacing.fixed.px: 50
+margin-top.px: 50
+
+-- lib.hero-product-service-card-wrapper:
+imageURL: $assets.files.images.frontend-development-icon.svg
+title: Frontend Development
+description: I create functional, beautiful and responsive frontend applications for the web with modern technologies.
+bgColor: #0BC5EA
+
+-- lib.hero-product-service-card-wrapper:
+imageURL: $assets.files.images.backend-development-icon.svg
+title: Backend Development
+description: I build high-quality cloud-based backend services for your applications to scale and host all your users.
+bgColor: #ED8936
+
+-- end: ftd.row
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- ftd.row: 
+spacing.fixed.px: 50
+margin-top.px: 50
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- lib.hero-product-service-card-wrapper:
+imageURL: $assets.files.images.ux-design-icon.svg
+title: UX Design
+description: I create applications for real user to match their needs and expectations, satisfy their needs and ease their lives.
+bgColor: #9F7AEA
 
--- ds.h3: 🚀 Fast Track 
+-- lib.hero-product-service-card-wrapper:
+imageURL: $assets.files.images.ui-design-icon.svg
+title: UI Design
+description: I design beautiful user interfaces for applications to work on all screen sizes. Your colors, typography and more, all pixel perfect and beautiful.
+bgColor: #38B2AC
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- end: ftd.row
 
--- ds.h3: 🌟 Whats next?
+-- end: ftd.column
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/page/).
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
--- ds.h3: 👀 Want to learn more?
+-- ftd.column:
+margin-top.px: 120
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ftd.row:
+margin-top.px: 50
+
+-- text.base-text:
+heading: Skills
+description: Programming
+imageURL: https://ik.imagekit.io/uuc110/Website/skills?updatedAt=1669666366824
+positionTop: -30
+
+-- end: ftd.row
+
+-- ftd.container:
+padding-vertical.px: 30
+padding-horizontal.px: 50
+shadow: $lib.shadow
+background.solid: white
+border-radius.px: 20
+
+-- ftd.column:
+spacing.fixed.px: 50
+align-content: center
+
+-- ftd.row:
+spacing.fixed.px: 75
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.html-5.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.css3.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.java.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.javascript.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.typescript.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.golang.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.react.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.vue-js.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.redux.svg
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.row:
+spacing.fixed.px: 75
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.next-js.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.nuxt-js.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.nest-js.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.nodejs.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.express-js.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.firebase.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.sass.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.tailwind-css.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.postcss.svg
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.row:
+spacing.fixed.px: 75
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.mysql.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.prisma.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.mongodb.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.heroku.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.vercel.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.netlify.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.amazon-web-services.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.docker.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.google-cloud.svg
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.row:
+spacing.fixed.px: 75
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.chartjs.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.postman.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.strapi.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.figma.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.storybook.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.adobe-xd.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.npm.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.yarn.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.git.svg
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.row:
+spacing.fixed.px: 75
+align-content: center
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.chakra-ui.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.styled-components.svg
+
+-- lib.skills-wrapper:
+imageURL: $assets.files.images.ant-design.svg
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.container
+
+-- end: ftd.column
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.column:
+margin-top.px: 160
+align-self: center
+align-content: center
+
+-- ftd.text: Product development, the easy way.
+role: $lib.hero-product-service-responsive-typography
+text-align: center
+
+-- ftd.text: I provide you the following perks for your product development process, and more.
+role: $lib.home-description-responsive-typography
+text-align: center
+margin-top.px: 10
+color: #53585e
+width.fixed.px: 900
+
+-- ftd.row: 
+spacing.fixed.px: 50
+margin-top.px: 50
+
+-- lib.hero-product-service-card-wrapper:
+imageURL: $assets.files.images.closer-involvement-icon.svg
+title: Closer involvement
+description: I involve my clients closely in the design and development process in order to deliver a product that best matches your expectations.
+bgColor: #F56565
+
+-- lib.hero-product-service-card-wrapper:
+imageURL: $assets.files.images.ship-faster-icon.svg
+title: Your product ships faster
+description: Unlike larger corporations, I am able to provide a faster product development process from start to finish to help your app launch faster.
+bgColor: #4299E1
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** Footer **********
+
+-- footer.footer:
+title: Ayush Soni | ©2023
+link: /
+
+-- footer.footer.social-buttons:
+
+-- social.social-button-wrapper:
+link: https://linkedin.com/in/Sourabhk110
+image: $assets.files.images.linkedin.png
+
+-- social.social-button-wrapper:
+link: https://twitter.com/STG_Sourabh
+image: $assets.files.images.twitter.png
+
+-- social.social-button-wrapper:
+link: https://github.com/uuc110
+image: $assets.files.images.github.png
+
+-- social.social-button-wrapper:
+link: https://instagram.com/uuc110
+image: $assets.files.images.instagram.png
+
+-- social.social-button-wrapper:
+link: https://youtube.com/
+image: $assets.files.images.youtube.png
+
+-- social.social-button-wrapper:
+link: mailto:uuc110@gmail.com
+image: $assets.files.images.mail.png
+
+-- end: footer.footer.social-buttons
+
+-- end: footer.footer
+
+-- end: layout.base-layout
 
 
--- ds.h3: 🎯 Used by?
 
-Our all documentation sites uses this `doc-site` theme.
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
 
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: my-ds.page
